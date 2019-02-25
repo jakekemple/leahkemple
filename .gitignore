@@ -1,0 +1,10 @@
+
+### Jekyll ###
+_site
+.sass-cache
+.jekyll-metadata
+
+Gemfile.lock
+.ruby-version
+*.DS_Store
+**/.DS_Store

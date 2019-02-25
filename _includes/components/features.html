@@ -1,0 +1,21 @@
+<!-- Features -->
+
+<section class="features alt">
+
+	{% for feature in include.features %}
+
+		<article class="icon {{ feature.icon | default: 'fa-star' }}">
+			<h3>{{ feature.title }}</h3>
+			<p>{{ feature.excerpt | remove: "<p>" | remove: "</p>" }}</p>
+
+			{% if feature.url %}
+				<ul class="actions">
+					<li><a href="{{ feature.url }}" class="button">{{ feature.link_text | default: "Read More" }}</a></li>
+				</ul>
+			{% endif %}
+
+		</article>
+
+	{% endfor %}
+
+</section>
