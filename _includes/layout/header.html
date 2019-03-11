@@ -3,31 +3,27 @@
 <section id="header" {% if page.url == "/" %}class="alt"{% endif %}>
 
 	<!-- Logo -->
-		<a href="{{ site.baseurl }}/" class="logo"><strong>Leah Kemple</strong></a>
+		<a href="{{ site.baseurl }}/" class="logo"><strong>Home</strong></a>
 
 	<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="{{ site.baseurl }}/">Home</a></li>
-				<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-				<li><a href="{{ site.baseurl }}/generic">Generic</a></li>
-				<li><a href="{{ site.baseurl }}/elements">Elements</a></li>
 				<li>
-					<a href="#" class="icon fa-angle-down">Dropdown</a>
+					<a href="#" class="icon fa-angle-down">News</a>
 					<ul>
-						<li><a href="#">Option One</a></li>
-						<li><a href="#">Option Two</a></li>
-						<li><a href="#">Option Three</a></li>
-						<li>
-							<a href="#">Submenu</a>
-							<ul>
-								<li><a href="#">Option One</a></li>
-								<li><a href="#">Option Two</a></li>
-								<li><a href="#">Option Three</a></li>
-								<li><a href="#">Option Four</a></li>
-							</ul>
-						</li>
+						<li><a href="{{ site.baseurl }}/elements">Features</a></li>
+						<li><a href="{{ site.baseurl }}/generic">Hard News</a></li>
+						<li><a href="{{ site.baseurl }}/generic">Sports</a></li>
+						<li><a href="{{ site.baseurl }}/elements">Anchoring</a></li>
 					</ul>
+				</li>
+				<li><a href="{{ site.baseurl }}/samples">Writing/Marketing</a></li>				
+				<li><a href="{{ site.baseurl }}/gallery">Photography</a></li>
+				<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+				<li>
+					<a href="https://www.facebook.com/leah.kemplekyou.3" class="social-icons icon fa-facebook"><span class="label">Facebook</span></a>
+					<a href="https://twitter.com/LeahKemple" class="social-icons icon fa-twitter"><span class="label">Twitter</span></a>
+					<a href="https://www.instagram.com/leahkemple/" class="social-icons icon fa-instagram"><span class="label">Instagram</span></a>
 				</li>
 			</ul>
 		</nav>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lorem ipsum dolor"
+title:  "Second Blog"
 date:   2016-09-22 19:41:07 -0600
 image: /images/pic09.jpg
 ---

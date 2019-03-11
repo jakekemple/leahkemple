@@ -9,16 +9,34 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Plugins
-plugins: ["jekyll-paginate"]
+plugins: ["jekyll-paginate-v2"]
 
 # Build settings
 markdown: kramdown
 sass:
   sass_dir: assets/sass
 
-# Pagination
-paginate: 4
-paginate_path: "/blog/page:num/"
+
+# # Pagination
+# paginate: 4
+# paginate_path: "/blog/page:num/"
+# paginate_path2: "/samples/page:num/"
+
+# Due to us using the categories for posts then it is advisable to explicitly specify a 
+# permalink structure for the site. Otherwise Jekyll attempts to organize the pages in folders
+# by the category names and it doesn't understand multi-categories to well :/
+# permalink: /:year/:month/:title.html
+permalink: pretty
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Featured post
 # The URL of the post that will be featured in the sidebar

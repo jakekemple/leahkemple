@@ -27,10 +27,19 @@ layout: default
 {% endcomment %}
 
 <!-- Main -->
-	<section class="main">
-		<section>
-			{{ content }}
-		</section>
-	</section>
-
-{% include components/sidebar.html align=page.sidebar-align %}
+<section class="wrapper style1">
+	<div class="inner">
+		<div class="row gtr-200">
+			<div class="col-8 col-12-medium">
+				{{ content }}
+			</div>
+			<div class="col-4 col-12-medium">
+				{% if page.category == "samples" %}
+					{% include components/sample-sidebar.html align=page.sidebar-align %}
+				{% else %}
+					{% include components/sidebar.html align=page.sidebar-align %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</section>
