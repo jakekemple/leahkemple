@@ -11,6 +11,11 @@
     padding-bottom: 56.25%;
 }
 
+.sample-file {
+    width: 100%;
+    height: 80vh;
+}
+
 .embed-video {
     position: absolute;
     top: 0;

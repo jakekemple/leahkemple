@@ -19,11 +19,11 @@ pagination:
 				<article>
 					<header>
 						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-						<p>{{ post.date | date: "%B %-d, %Y" }}</p>
+						<p>{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.sampletype }}</p>
 					</header>
 					{{ post.excerpt }}
 					<ul class="actions">
-						<li><a href="{{ site.baseurl }}{{ post.url }}" class="button">Read More</a></li>
+						<li><a href="{{ site.baseurl }}{{ post.url }}" class="button">View</a></li>
 					</ul>
 				</article>
 

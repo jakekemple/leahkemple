@@ -4,6 +4,7 @@ title:  "Dolor magna tempus adipiscing"
 date:   2016-04-19 12:34:56 -0600
 image: /images/pic09.jpg
 category: samples
+sampletype: Writing
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta temporibus quis voluptatem numquam quisquam, placeat, aut sit, non porro, nulla ea ullam voluptas. Illo numquam, autem esse, ad tempora in. Mauris posuere massa augue, eget vulputate felis pellentesque et. Phasellus non nunc sit amet diam rutrum tempus et eu quam. In posuere metus eu diam euismod, sodales eleifend dolor volutpat.
