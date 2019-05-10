@@ -5,7 +5,6 @@ category: samples
 pagination: 
   enabled: true
   category: samples
-  permalink: /:num/
 ---
 
 <!-- Main -->
@@ -40,8 +39,10 @@ pagination:
 
 						<ul class="icons">
 
-							{% if paginator.previous_page %}
-								<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="">Prev</a></li>
+							{% if paginator.previous_page == 1 %}
+								<li><a href="{{ site.samples_path | prepend: site.baseurl | replace: ':num', '' | replace: '//', '/' }}" class="">Prev</a></li>
+							{% elsif paginator.previous_page %}
+								<li><a href="{{ site.samples_path | prepend: site.baseurl | replace: ':num', paginator.previous_page | replace: '//', '/' }}" class="">Prev</a></li>
 							{% else %}
 								<li><span class="disabled">Prev</span></li>
 							{% endif %}
@@ -55,9 +56,9 @@ pagination:
 								{% endif %}
 
 								{% if page == 1 %}
-									{% assign href = site.paginate_path2 | prepend: site.baseurl | replace: '//', '/' | replace: '/page:num', '' %}
+									{% assign href = site.samples_path | prepend: site.baseurl | replace: '/:num', '' %}
 								{% else %}
-									{% assign href = site.paginate_path2 | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page %}
+									{% assign href = site.samples_path | prepend: site.baseurl | replace: ':num', page %}
 								{% endif %}
 
 								<li><a href="{{ href }}" class="{{ class }}">{{ page }}</a></li>
@@ -65,7 +66,7 @@ pagination:
 							{% endfor %}
 							
 							{% if paginator.next_page %}
-								<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="">Next</a></li>
+								<li><a href="{{ site.samples_path | prepend: site.baseurl | replace: ':num', paginator.next_page | replace: '//', '/' }}" class="">Next</a></li>
 							{% else %}
 								<li><span class="disabled">Next</span></li>
 							{% endif %}
