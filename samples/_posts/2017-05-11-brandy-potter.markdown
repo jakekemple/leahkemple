@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Brandy Potter"
-date:   2016-05-11 12:34:56 -0600
+date:   2017-05-11 12:34:56 -0600
 category: samples
 sampletype: Marketing
 ---

@@ -1,5 +1,149 @@
 /* Custom CSS */
 
+#alert-bar p {
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alert-bar {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    background-color: #4797ec;
+    background-size: auto, auto;
+    background-repeat: repeat, no-repeat;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    box-shadow: 0 0.075rem 1rem 0 rgba(0, 0, 0, 0.125);
+    height: 3rem;
+    left: 0;
+    line-height: 3.5rem;
+    padding: 0 1.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10000; }
+    #alert-bar input, #alert-bar select, #alert-bar textarea {
+      color: #ffffff; }
+    #alert-bar a {
+      color: #ffffff; }
+    #alert-bar strong, #alert-bar b {
+      color: #ffffff; }
+    #alert-bar h1, #alert-bar h2, #alert-bar h3, #alert-bar h4, #alert-bar h5, #alert-bar h6 {
+      color: #ffffff; }
+    #alert-bar blockquote {
+      border-left-color: #ffffff; }
+    #alert-bar code {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: #ffffff; }
+    #alert-bar hr {
+      border-bottom-color: #ffffff; }
+    #alert-bar header.major h1:after, #alert-bar header.major h2:after, #alert-bar header.major h3:after, #alert-bar header.major h4:after, #alert-bar header.major h5:after, #alert-bar header.major h6:after {
+      background: #ffffff; }
+    #alert-bar .logo {
+      -moz-flex-grow: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-grow: 1;
+      flex-grow: 1;
+      -moz-flex-shrink: 1;
+      -webkit-flex-shrink: 1;
+      -ms-flex-shrink: 1;
+      flex-shrink: 1;
+      border: 0;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      white-space: nowrap; }
+    #alert-bar.reveal {
+      -moz-animation: reveal-header 0.5s ease;
+      -webkit-animation: reveal-header 0.5s ease;
+      -ms-animation: reveal-header 0.5s ease;
+      animation: reveal-header 0.5s ease; }
+    #alert-bar.alt {
+      -moz-animation: none;
+      -webkit-animation: none;
+      -ms-animation: none;
+      animation: none;
+      background: none;
+      box-shadow: none;
+      height: 7rem;
+      line-height: 7rem;
+      padding: 0 3rem;
+      position: absolute; }
+      #alert-bar.alt:before {
+        background-color: #4797ec;
+        background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(71, 151, 236, 0), #884beb 90%);
+        background-size: auto, auto;
+        background-repeat: repeat, no-repeat;
+        content: '';
+        display: block;
+        height: 0.75rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; }
+    #alert-bar + #banner {
+      margin-top: -3.5rem; }
+    #alert-bar > .navPanelToggle {
+      -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, top 0.2s ease-in-out, right 0.2s ease-in-out;
+      text-decoration: none;
+      border: 0;
+      display: none;
+      font-size: 0.9rem;
+      height: inherit;
+      line-height: inherit;
+      outline: 0;
+      padding: 0 1.5rem;
+      position: absolute;
+      right: 0;
+      text-transform: uppercase;
+      top: 0; }
+      #alert-bar > .navPanelToggle:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important; }
+      #alert-bar > .navPanelToggle:before {
+        content: '\f0c9';
+        float: right;
+        margin: 0 0 0 0.625rem; }
+    @media screen and (max-width: 1280px) {
+      #alert-bar.alt {
+        height: 5.25rem;
+        line-height: 5.25rem;
+        padding: 0 1.5rem; } }
+    @media screen and (max-width: 980px) {
+      #alert-bar > .navPanelToggle {
+        display: block; }
+      #alert-bar.alt > .navPanelToggle {
+        padding: 0 1.75rem; } }
+    @media screen and (max-width: 736px) {
+      #alert-bar {
+        height: 3rem;
+        line-height: 3rem; }
+        #alert-bar + #banner {
+          margin-top: -3rem; } }
+    @media screen and (max-width: 480px) {
+      #alert-bar > .navPanelToggle {
+        overflow: hidden;
+        text-indent: 4rem;
+        white-space: nowrap;
+        width: 4rem; } }
+
 .head-text h1 {
     margin:0 !important;
 }

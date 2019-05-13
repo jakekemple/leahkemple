@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "UCM Student Outcome Brochure"
-date:   2016-05-22 12:34:56 -0600
+date:   2017-05-22 12:34:56 -0600
 category: samples
 sampletype: Marketing
 ---

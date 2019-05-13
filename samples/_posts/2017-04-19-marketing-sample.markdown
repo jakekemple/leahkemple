@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dolor magna tempus adipiscing"
-date:   2016-04-19 12:34:56 -0600
+date:   2017-04-19 12:34:56 -0600
 image: /images/pic09.jpg
 category: samples
 sampletype: Writing
