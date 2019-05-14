@@ -13,6 +13,8 @@ layout: default
 			<div class="col-4 col-12-medium">
 				{% if page.category == "samples" %}
 					{% include components/sample-sidebar.html align=page.sidebar-align %}
+				{% elsif page.category == "news" %}
+					{% include components/news-sidebar.html align=page.sidebar-align %}
 				{% else %}
 					{% include components/sidebar.html align=page.sidebar-align %}
 				{% endif %}

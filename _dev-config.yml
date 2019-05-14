@@ -22,6 +22,7 @@ sass:
 # paginate_path: "/:category/:num/"
 blog_path: "/blog/:num/"
 samples_path: "/samples/:num/"
+news_path: "/news/:num/"
 # paginate_path2: "/samples/page:num/"
 
 # Due to us using the categories for posts then it is advisable to explicitly specify a 

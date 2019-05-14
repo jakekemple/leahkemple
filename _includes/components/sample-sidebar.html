@@ -52,8 +52,7 @@
 				{% for post in paginator.posts limit:2 %}
 				{% if post.category == "samples" %}
 					<li>
-						<a href="{{ post.url }}">{{ post.title }}</a>
-						<span class="date">{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.sampletype }}</span>
+						<a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
 					</li>
 				{% endif %}
 				{% endfor %}
