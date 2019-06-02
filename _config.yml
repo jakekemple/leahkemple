@@ -47,3 +47,6 @@ pagination:
 # This is accessible as {{ page.id }} and will depend on your
 # URL format settings
 featured_post: /jekyll/update/2016/10/03/welcome-to-jekyll
+
+# Google Analytics
+google_analytics: UA-111177172-3
