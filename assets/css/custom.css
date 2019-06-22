@@ -150,13 +150,16 @@
 
 .embed-container {
     position: relative;
-    width: 100%;
+    margin: auto;
+    width: 80%;
     height: 0;
     padding-bottom: 56.25%;
 }
 
 .sample-file {
-    width: 100%;
+    display:block;
+    margin:auto;
+    width: 80%;
     height: 80vh;
 }
 

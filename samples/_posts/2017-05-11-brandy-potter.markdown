@@ -4,8 +4,10 @@ title:  "Brandy Potter"
 date:   2017-05-11 12:34:56 -0600
 category: samples
 sampletype: Marketing
+pdf_file: 
+- brandy-potter.pdf
 ---
 
 This piece uses a student's experiences as a way to market the university to future students. (PDF 1 MB)
 
-<embed class="sample-file" src="{{ site.baseurl }}/files/brandy-potter.pdf" width="" height="" />
+<span class="pdf-container"></span>
