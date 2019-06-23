@@ -2,16 +2,22 @@
 layout: default
 ---
 
-
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="inner">
+
+		<header class="major special" style="">
+			<h2 style="">{{ page.title }}</h2>
+			<p class=""><i>{{ page.sub-title }}</i></p>
+			<br/>
+		</header>
+
 		<div class="row gtr-200">
 			<div class="col-8 col-12-medium">
 				{{ content }}
 			</div>
 			<div class="col-4 col-12-medium">
-				{% if page.category == "samples" %}
+				{% if page.category == "works" %}
 					{% include components/sample-sidebar.html align=page.sidebar-align %}
 				{% elsif page.category == "news" %}
 					{% include components/news-sidebar.html align=page.sidebar-align %}

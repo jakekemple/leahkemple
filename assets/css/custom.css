@@ -156,6 +156,12 @@
     padding-bottom: 56.25%;
 }
 
+.feature-text {
+  height:100px;
+  width: 250px;
+  margin:auto;
+}
+
 .sample-file {
     display:block;
     margin:auto;

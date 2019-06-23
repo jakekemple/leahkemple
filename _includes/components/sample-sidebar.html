@@ -50,7 +50,7 @@
 			<ul class="posts">
 
 				{% for post in paginator.posts limit:2 %}
-				{% if post.category == "samples" %}
+				{% if post.category == "works" %}
 					<li>
 						<a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
 					</li>

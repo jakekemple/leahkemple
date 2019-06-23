@@ -5,6 +5,16 @@
 ///
 
 /* Features */
+	.feature-wrapper {
+
+		@include breakpoint('<=xlarge') {
+			padding-bottom:6rem !important;
+		}	
+
+		@include breakpoint('<=small') {
+			padding-bottom:4rem !important;
+		}
+	}
 
 	.features {
 		@include vendor('align-items', 'center');
@@ -14,10 +24,13 @@
 		> ul {
 			margin-bottom: 0;
 			padding-left: 0;
+			width: 100%;
 
 			> li {
 				list-style: none;
 				margin-top: 3rem;
+				padding-top: 2em;
+				padding-bottom: 2em;
 
 				> :last-child {
 					margin-bottom: 0;
@@ -56,9 +69,17 @@
 			}
 		}
 
-		@include breakpoint('<=large') {
+		@include breakpoint('<=medium') {
 			@include vendor('flex-wrap', 'wrap');
 			@include vendor('justify-content', 'center');
+
+			width: 75%;
+			margin:auto;
+
+			> p.feature-text {
+				width: 230px;
+			}
+
 
 			> .image {
 				@include vendor('order', '-1');
@@ -101,10 +122,31 @@
 			}
 		}
 
-		@include breakpoint('<=small') {
+		@include breakpoint('<=medium') {
 			> .image {
 				img {
 					width: 15rem;
+				}
+			}
+
+			> ul {
+				padding: 0;
+				width: 70%;
+
+				> li {
+					margin-top: 2rem;
+
+					&:first-child {
+						margin-top: 2rem;
+					}
+				}
+
+				&:first-child {
+					> li {
+						&:first-child {
+							margin-top: 0;
+						}
+					}
 				}
 			}
 		}

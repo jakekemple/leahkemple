@@ -21,9 +21,9 @@ sass:
 # paginate: 4
 # paginate_path: "/:category/:num/"
 blog_path: "/blog/:num/"
-samples_path: "/samples/:num/"
+works_path: "/works/:num/"
 news_path: "/news/:num/"
-# paginate_path2: "/samples/page:num/"
+# paginate_path2: "/works/page:num/"
 
 # Due to us using the categories for posts then it is advisable to explicitly specify a 
 # permalink structure for the site. Otherwise Jekyll attempts to organize the pages in folders
@@ -34,9 +34,9 @@ permalink: /:categories/:title/
 # Pagination Settings
 pagination:
   enabled: true
-  per_page: 4
+  per_page: 6
   permalink: '/:num/'
-  title: ' - page :num'
+  title: 'Page :num'
   limit: 0
   sort_field: 'date'
   sort_reverse: true

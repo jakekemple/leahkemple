@@ -2,7 +2,7 @@
 layout: post
 title:  "Brandy Potter"
 date:   2017-05-11 12:34:56 -0600
-category: samples
+category: works
 sampletype: Marketing
 pdf_file: 
 - brandy-potter.pdf
