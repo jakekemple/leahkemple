@@ -44,3 +44,14 @@
 			}
 
 	}
+
+	// Sidebar Stuff
+	.sidebar {
+		text-align: right !important;
+	}
+
+	@include breakpoint('<=medium') {
+		.sidebar {
+			text-align: left !important;
+		}
+	}

@@ -18,12 +18,13 @@ pagination:
 				<article>
 					<header>
 						<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-						<p>{{ post.date | date: "%B %-d, %Y" }} &middot; {{ post.newstype }}</p>
+						<p style="margin-bottom:1rem;"><i>{{ post.newstype }} &middot; {{ post.date | date: "%B %-d, %Y" }}</i></p>
 					</header>
-					{{ post.excerpt }}
-					<ul class="actions">
+					<p style="margin-bottom:1rem;">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}<p>
+					<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+					{% comment %} <ul class="actions">
 						<li><a href="{{ site.baseurl }}{{ post.url }}" class="button">View</a></li>
-					</ul>
+					</ul> {% endcomment %}
 				</article>
 
 				{% unless forloop.last %}

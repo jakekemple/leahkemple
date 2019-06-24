@@ -2,41 +2,42 @@
 
 <aside class="sidebar{% if include.align == 'left' %} alt{% endif %}">
 
-	<!-- Blurb -->
-		<section>
-			<h2>Anchoring Posts</h2>
-            {% for post in paginator.posts %}
-            {% if post.newstype == "Anchoring" %}
-                <a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-            {% endif %}
-            {% endfor %}
-        </section>
-        <br/>
-
-        <section>
-			<h2>Sports Posts</h2>
-            {% for post in paginator.posts %}
-            {% if post.newstype == "Sports" %}
-                <a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-            {% endif %}
-            {% endfor %}
-
-		</section>
-        <br/>
-
-	<!-- Posts -->
 		<section>
 			<h2>Recently Added</h2>
-			<ul class="posts">
+			<span class="posts">
 
 				{% for post in paginator.posts limit:3 %}
 				{% if post.category == "news" %}
-					<li>
-                        <a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>					</li>
-                    </li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <br/>
+                <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <hr/>
                 {% endif %}
 				{% endfor %}
 
-			</ul>
+			</span>
+		</section>
+        <br/>
+
+	<!-- Blurb -->
+		{% comment %} <section>
+			<h2>Feature Stories</h2>
+            {% for post in paginator.posts %}
+            {% if post.newstype == "Features" %}
+                <a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+            {% endif %}
+            {% endfor %}
+        </section> <br/>{% endcomment %}
+        
+
+        <section>
+			<h2>Hard News</h2>
+            {% for post in paginator.posts limit:2 %}
+            {% if post.newstype == "Hard News" %}
+                <a href="{{ post.url }}">{{ post.title }}</a><br/>
+                <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <hr/>
+            {% endif %}
+            {% endfor %}
 		</section>
 </aside>
