@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Indian Hills instructor teaches citizenship class through personal experiences"
-date:   2019-06-10 12:00:00 -0600
+date:   2019-06-11 12:00:00 -0600
 category: news
 newstype: Hard News
 ---

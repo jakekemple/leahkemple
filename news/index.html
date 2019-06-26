@@ -41,9 +41,9 @@ pagination:
 						<ul class="icons">
 
 							{% if paginator.previous_page == 1 %}
-								<li><a href="{{ site.news_path | prepend: site.baseurl | replace: ':num', '' | replace: '//', '/' }}" class="">Prev</a></li>
+								<li><a href="{{ site.news_path | replace: ':num', '' | replace: '//', '/' }}" class="">Prev</a></li>
 							{% elsif paginator.previous_page %}
-								<li><a href="{{ site.news_path | prepend: site.baseurl | replace: ':num', paginator.previous_page | replace: '//', '/' }}" class="">Prev</a></li>
+								<li><a href="{{ site.news_path | replace: ':num', paginator.previous_page | replace: '//', '/' }}" class="">Prev</a></li>
 							{% else %}
 								<li><span class="disabled">Prev</span></li>
 							{% endif %}
@@ -67,7 +67,7 @@ pagination:
 							{% endfor %}
 							
 							{% if paginator.next_page %}
-								<li><a href="{{ site.news_path | prepend: site.baseurl | replace: ':num', paginator.next_page | replace: '//', '/' }}" class="">Next</a></li>
+								<li><a href="{{ site.news_path | replace: ':num', paginator.next_page | replace: '//', '/' }}" class="">Next</a></li>
 							{% else %}
 								<li><span class="disabled">Next</span></li>
 							{% endif %}
