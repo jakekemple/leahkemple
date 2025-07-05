@@ -3,17 +3,14 @@ layout: sidebar
 title: News
 sub-title: Articles, news clips, stories, & other publications
 category: news
-pagination: 
-  enabled: true
-  category: news
 ---
 
 <!-- Main -->
 
 	<!-- Post list -->
 		<section>
-
-			{% for post in paginator.posts %}
+			{% assign news_posts = site.posts | where: "category", "news" %}
+			{% for post in news_posts %}
 
 				<article>
 					<header>
@@ -32,49 +29,4 @@ pagination:
 				{% endunless %}
 
 			{% endfor %}
-			<hr class="major" />
-			<div class="row aln-right" style="text-align:right;">
-				<div class="col-4" style="width:100%; text-align:right;">
-				<!-- Pagination -->
-					{% if paginator.total_pages > 1 %}
-
-						<ul class="icons">
-
-							{% if paginator.previous_page == 1 %}
-								<li><a href="{{ site.news_path | replace: ':num', '' | replace: '//', '/' }}" class="">Prev</a></li>
-							{% elsif paginator.previous_page %}
-								<li><a href="{{ site.news_path | replace: ':num', paginator.previous_page | replace: '//', '/' }}" class="">Prev</a></li>
-							{% else %}
-								<li><span class="disabled">Prev</span></li>
-							{% endif %}
-
-							{% for page in (1..paginator.total_pages) %}
-
-								{% if page == paginator.page %}
-									{% assign class = 'page active' %}
-								{% else %}
-									{% assign class = 'page' %}
-								{% endif %}
-
-								{% if page == 1 %}
-									{% assign href = site.news_path | prepend: site.baseurl | replace: '/:num', '' %}
-								{% else %}
-									{% assign href = site.news_path | prepend: site.baseurl | replace: ':num', page %}
-								{% endif %}
-
-								<li><a href="{{ href }}" class="{{ class }}">{{ page }}</a></li>
-
-							{% endfor %}
-							
-							{% if paginator.next_page %}
-								<li><a href="{{ site.news_path | replace: ':num', paginator.next_page | replace: '//', '/' }}" class="">Next</a></li>
-							{% else %}
-								<li><span class="disabled">Next</span></li>
-							{% endif %}
-
-						</ul>
-
-					{% endif %}
-				</div>
-			</div>
 		</section>

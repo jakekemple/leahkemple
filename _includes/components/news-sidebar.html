@@ -6,7 +6,7 @@
 			<h2>Recently Added</h2>
 			<span class="posts">
 
-				{% for post in paginator.posts limit:3 %}
+				{% for post in site.posts limit:3 %}
 				{% if post.category == "news" %}
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 <br/>
@@ -20,11 +20,12 @@
         <br/>
 
 	<!-- Blurb -->
-		<section>
+		        <section>
 			<h2>Feature Stories</h2>
-            {% for post in paginator.posts limit:2 %}
+            {% for post in site.posts limit:10 %}
             {% if post.newstype == "Features" %}
                 <a href="{{ post.url }}">{{ post.title }}</a> &middot; <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                {% break %}
             {% endif %}
             {% endfor %}
         </section> <br/>
@@ -32,11 +33,12 @@
 
         <section>
 			<h2>Hard News</h2>
-            {% for post in paginator.posts limit:2 %}
+            {% for post in site.posts limit:10 %}
             {% if post.newstype == "Hard News" %}
                 <a href="{{ post.url }}">{{ post.title }}</a><br/>
                 <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
                 <hr/>
+                {% break %}
             {% endif %}
             {% endfor %}
 		</section>
