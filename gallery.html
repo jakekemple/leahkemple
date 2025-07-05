@@ -89,9 +89,9 @@ images:
                 <div class="my-gallery row gtr-50 gtr-uniform" itemscope itemtype="http://schema.org/ImageGallery">
                 {% for image in page.images %}
                     <figure class="pswpModal col-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                        <a href="{{ image.image_path }}" itemprop="contentUrl" data-size="{{ image.dimensions }}" style="border-bottom:none;">
-                            <img class="gradient-border" style="object-fit: cover;" src="{{ image.image_path }}" height="200" width="375" data-size="600x400" itemprop="thumbnail" alt="{{ image.title }}" />
-                        </a>
+                      <a href="{{ site.baseurl }}{{ image.image_path }}" itemprop="contentUrl" data-size="{{ image.dimensions }}" style="border-bottom:none;">
+                        <img class="gradient-border" style="object-fit: cover;" src="{{ site.baseurl }}{{ image.image_path }}" height="200" width="375" data-size="600x400" itemprop="thumbnail" alt="{{ image.title }}" />
+                      </a>
                         <figcaption style="display:none;"  itemprop="caption description"></figcaption> {% comment %} {{ item.description }} {% endcomment %}
                     </figure>
                 {% endfor %}  
